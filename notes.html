@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>First Steps</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class="wrapper">  
+
+<header>
+<div class="logo"><a href="index.html">Антон Васильев</a></div>
+        <ul id="menu">
+            {{#pages}} <li><a href="{{url}}.html" class="mainLink">{{title}}</a></li>{{/pages}}
+        </ul>
+    
+</header>
+
+    <section>
+       <h1 class="caption-page" id="notes">Заметки</h1>
+       <div id="accordion">
+            <h3><a href="#">Шпаргалки</a></h3>
+                <div>
+                    <ul>
+                        <li><a href="/doc/html5-cheat-sheet.pdf">HTML 5</a></li>
+                        <li><a href="/doc/css3-cheat-sheet.pdf">CSS 3</a></li>
+                        <li><a href="/doc/javascript-cheat-sheet.jpg">JS(1)</a></li>
+                        <li><a href="/doc/javascript-cheat-sheet-v1.jpg">JS(2)</a></li>
+                        <li><a href="http://oscarotero.com/jquery/">JQuery</a></li>
+                        <li><a href="http://scotch.io/bar-talk/sublime-text-keyboard-shortcuts">Sublime Text 3 (Shortcuts)</a></li>
+                        <li><a href="http://docs.emmet.io/cheat-sheet/">EMMET</a></li>
+                        <li><a href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf">GitHub</a></li>
+                    </ul>
+                </div>
+            <h3><a href="#">Книги для веб-разработчика</a></h3>
+                <div>
+                    <ul>
+                        <li><a href="http://www.ozon.ru/context/detail/id/17513568/">HTML5. Рецепты программирования (O’Reilly)</a></li>
+                        <li><a href="http://www.ozon.ru/context/detail/id/7449521/">Сила CSS3. Освой новейший стандарт веб-разработок! (Библиотека специалиста)</a></li>
+                        <li><a href="http://www.ozon.ru/context/detail/id/19677670/">JavaScript. Подробное руководство (O’Reilly)</a></li>
+                        <li><a href="http://www.ozon.ru/context/detail/id/15708347/">Сначала мобильные!</a></li>
+                        <li><a href="http://www.ozon.ru/context/detail/id/6277333/">jQuery. Подробное руководство по продвинутому JavaScript (Иеуда Кац)</a></li>
+                    </ul>
+                </div>
+            <h3><a href="#">English</a></h3>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque error minus excepturi perferendis itaque deleniti voluptas velit voluptatibus ad at consequuntur nostrum voluptate voluptatem quia consequatur, nam corporis fuga maxime.</div>
+            <h3><a href="#">Полезные ссылки</a></h3>
+                <div>
+                    <ul>
+                        <li><a href="https://www.iconfinder.com/">Куча различных иконок для сайта</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+       </div>
+    </section>
+
+        <div class="push"></div>
+
+
+
+</div>
+<hr class="footerRuler">
+<footer>
+    <p>Copyright &copy; 2014</p>
+</footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/notes.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

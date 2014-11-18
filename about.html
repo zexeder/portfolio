@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Обо мне</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+        <script src="http://malsup.github.com/jquery.form.js"></script> 
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class="wrapper">  
+
+<header>
+<div class="logo"><a href="index.html">Антон Васильев</a></div>
+        <ul id="menu">
+            {{#pages}} <li><a href="{{url}}.html" class="mainLink">{{title}}</a></li>{{/pages}}
+        </ul>
+    
+</header>
+
+    <section>
+       <h1 class="caption-page" id="about">Обо мне</h1>
+              <article class="about">
+            <p>В серьез занимаюсь веб-разработкой чуть больше года. Раньше делал простенькие сайты, с использованием HTML 4.0 и CSS 2. Но из-за нехватки времени, пришлось на некоторое время оставить свое занятие.</p>
+            <p>Перед тем, как серьезно заняться веб-разработкой, я пару лет подрабатывал рерайтером/копирайтером. Но потом оставил это занятие и решил переключиться на что-нибудь новое. Завел пару блогов, но решил этим не ограничиваться и вновь вернуться к тому, чем когда-то занимался.</p>
+            <p>В настоящее время занимаюсь тем, что делаю сайты на заказ, изучаю английский язык, веду блог, где выкладываю переводы англоязычных статей и совершенствую свои навыки в области программирования на JS. Для тех, кто хочет заказать сайт, можете воспользоваться формой связи справа или одним из контактов для связи ниже.</p>
+
+              <h1 class="caption-page">О сайте</h1>
+       <p>Для создания сайта были использованы знания HTML5, CSS3, JS/JQuery. </p>
+       <p>Использованы jQuery плагины: <a href="http://jqueryui.com/accordion/">accordion</a> и <a href="http://jqueryui.com/datepicker/">datepicker</a>.</p>
+       <p>Использованы шрифты: <a href="http://www.google.com/fonts/specimen/Courgette">Courgette</a>, <a href="http://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> и <a href="http://www.google.com/fonts/specimen/PT+Sans">PT Sans</a>.</p>
+       </article>
+           <form id="myForm" action="#" method="post"> 
+               <h1 class="caption-page">Форма связи</h1>
+                <fieldset>
+                    <label for="name">Имя *</label>
+                    <input id="name" class="form-text" name="name" autocomplete="off" type="text">
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email *</label>
+                    <input id="email" class="form-text" name="email" autocomplete="off" type="email">
+                </fieldset>
+                <fieldset>
+                    <label for="user-message">Сообщение *</label>
+                    <textarea id="user-message" name="user_message"></textarea>
+                </fieldset>
+                <button type="submit">Отправить</button> 
+           </form>
+    </section>
+
+        <div class="push"></div>
+
+
+
+</div>
+<hr class="footerRuler">
+<footer>
+    <p>Copyright &copy; 2014</p>
+</footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
