@@ -29,28 +29,28 @@ $('#menu').html(Mustache.render($('#menu').html(), {pages: pages}));
 //Portfolio list
 var preview = [
 	{
-		src: '../img/screen/mini-iphone',
+		src: './img/screen/mini-iphone',
 		capt: 'iPhone',
 		desc: 'Верстка макета из PSD',
 		link: 'pr_iphone',
 		more: 'Читать далее...'
 	},
 	{
-		src: '../img/screen/mini-temryuk',
+		src: './img/screen/mini-temryuk',
 		capt: 'Отдых в Темрюке',
 		desc: 'Сайт об отдыхе в г.Темрюке',
 		link: 'pr_temryuk',
 		more: 'Читать далее...'
 	},
 	{
-		src: '../img/screen/mini-orgteh',
+		src: './img/screen/mini-orgteh',
 		capt: 'ОргТехСтрой',
 		desc: 'Редизайн сайта о строительстве',
 		link: 'pr_orgteh',
 		more: 'Читать далее...'
 	},
 	{
-		src: '../img/screen/mini-test-yug',
+		src: './img/screen/mini-test-yug',
 		capt: 'Genetic-test',
 		desc: 'Тестирование по отпечаткам пальцев',
 		link: 'pr_test',
