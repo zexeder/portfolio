@@ -22,6 +22,10 @@ footer, .push {
     height: 4em;
 }
 
+.push {
+    clear: both;
+}
+
 
  
 .pic {
